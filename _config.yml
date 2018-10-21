@@ -1,4 +1,9 @@
+# 头顶上的三个菜单 现在只支持 github bilibili tag next prev
 menu:
   github: https://github.com/
   bilibili: https://bilibili.com/
   tag: /tag
+
+# 页面的内容简单设置
+title: Acard
+description: 一款卡片风格 简洁 大方 美观的 Hexo 主题

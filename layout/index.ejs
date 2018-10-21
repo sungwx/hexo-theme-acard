@@ -1,6 +1,3 @@
-
-
-
 <section id="index-posts" class="index-posts">
   <% page.posts.each(function (post) { %>
   <article id="index-posts-post" class="index-posts-post">
@@ -20,6 +17,7 @@
           <a class="index-post-title-link" href="<%- url_for(post.path) %>">
             more</a>
         </div>
+        <div class="fix"></div>
     </div>
   </article>
   <% }) %>
