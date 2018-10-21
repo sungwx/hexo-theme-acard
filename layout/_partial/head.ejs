@@ -1,0 +1,27 @@
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>
+        <%= config.title %>
+    </title>
+    <%- css('css/style') %>
+    <%- js('js/iconfont') %>
+    <%- js('http://libs.baidu.com/jquery/2.0.0/jquery.min.js') %>
+
+    <script>
+        $(document).ready(function () {
+            let i = 1
+            let all = $("#total").text()
+            $(".more").click(function () {
+                let cid = "#load" + i
+                $(cid).load("/page/" + (++i) + "/ #index-posts", function (responseTxt, statusTxt, xhr) {
+                    if (statusTxt == "success")
+                        $(cid).append("<div id = 'load" + i + "'" + ">" + "</div>")
+                    if (i >= all)
+                        $("#pager").html("<a href='/' class='more'>已经到最底层了，再点我触底反弹</a>")
+                });
+
+            });
+        });
+    </script>
+</head>

@@ -1,0 +1,30 @@
+
+
+
+<section id="index-posts" class="index-posts">
+  <% page.posts.each(function (post) { %>
+  <article id="index-posts-post" class="index-posts-post">
+    <span class="index-post-img"><img src="./img/pic01.jpg" alt="" class="img-bg" ></span>
+    <div class="index-post-desc">
+      <div class="index-post-title">
+        <p><%= post.title %></p>
+      </div>
+      <div class="index-post-content">
+        <%- post.excerpt %>
+      </div>
+      <!-- <div class="post-meta">
+        <span class="post-time">
+          <%- date(post.date, "YYYY-MM-DD") %></span>
+      </div> -->
+      <div class="index-post-title">
+          <a class="index-post-title-link" href="<%- url_for(post.path) %>">
+            more</a>
+        </div>
+    </div>
+  </article>
+  <% }) %>
+</section>
+<div id="load1" ></div>
+<div id="pager" class="pager"><a class="more">加载更多</a></div>
+<div id="total" style="display:none"><%= page.total %></div>
+

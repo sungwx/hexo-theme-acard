@@ -1,0 +1,20 @@
+<article class="post article-container">
+  <div class="post-title" style="display:none">
+    <h2 class="title">
+      <%= page.title %>
+    </h2>
+    <script>
+      $(document).ready(function () {
+        let title = $(".title").text()
+        $("#header-page-desc-inner").text(title)
+      });
+    </script>
+  </div>
+  <div class="post-meta">
+    <span class="post-time">
+      <%- date(page.date, "YYYY-MM-DD") %></span>
+  </div>
+  <div class="post-content">
+    <%- page.content %>
+  </div>
+</article>
