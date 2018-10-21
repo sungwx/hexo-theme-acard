@@ -1,0 +1,591 @@
+.article-container figure.highlight.js table:before {
+  content: "js";
+}
+.article-container figure.highlight.javascript table:before {
+  content: "javascript";
+}
+.article-container figure.highlight.python table:before {
+  content: "python";
+}
+.article-container figure.highlight.ruby table:before {
+  content: "ruby";
+}
+.article-container figure.highlight.xml table:before {
+  content: "xml";
+}
+.article-container figure.highlight.html table:before {
+  content: "html";
+}
+.article-container figure.highlight.css table:before {
+  content: "css";
+}
+.article-container figure.highlight.perl table:before {
+  content: "perl";
+}
+.article-container figure.highlight.sql table:before {
+  content: "sql";
+}
+.article-container figure.highlight.coffeescript table:before {
+  content: "coffeescript";
+}
+.article-container figure.highlight.java table:before {
+  content: "java";
+}
+.article-container figure.highlight.scala table:before {
+  content: "scala";
+}
+.article-container figure.highlight.kotlin table:before {
+  content: "kotlin";
+}
+.article-container figure.highlight.c table:before {
+  content: "c";
+}
+.article-container figure.highlight.c\+\+ table:before {
+  content: "c\+\+";
+}
+.article-container figure.highlight.go table:before {
+  content: "go";
+}
+.article-container figure.highlight.less table:before {
+  content: "less";
+}
+.article-container figure.highlight.sass table:before {
+  content: "sass";
+}
+.article-container figure.highlight.scss table:before {
+  content: "scss";
+}
+.article-container figure.highlight.stylus table:before {
+  content: "stylus";
+}
+.article-container figure.highlight.styl table:before {
+  content: "styl";
+}
+.article-container figure.highlight.typescript table:before {
+  content: "typescript";
+}
+.article-container figure.highlight.ts table:before {
+  content: "ts";
+}
+.article-container figure.highlight.bash table:before {
+  content: "bash";
+}
+.article-container figure.highlight.yml table:before {
+  content: "yml";
+}
+.article-container figure.highlight.gradle table:before {
+  content: "gradle";
+}
+.article-container pre,
+.article-container .highlight {
+  overflow: auto;
+  margin: 1rem 0;
+  padding: 0;
+  padding-top: 1.4rem;
+  background: #f6f8fa;
+  color: #90a4ae;
+  font-size: $code-font-size;
+  line-height: $line-height-code-block;
+}
+figure.highlight {
+  position: relative;
+}
+blockquote {
+  margin: 0;
+  padding: 0 0.6rem;
+  border-left: 0.2rem solid $blockquote-padding-color;
+  color: $blockquote-color;
+}
+.article-container pre,
+.article-container code {
+  font-family: $code-font !important;
+}
+.article-container code {
+  padding: 0.1rem 0.2rem;
+  background: $code-background;
+  color: $code-foreground;
+  word-wrap: break-word;
+  font-size: $code-font-size;
+}
+.article-container pre code {
+  padding: 0;
+  background: none;
+  color: #90a4ae;
+  text-shadow: none;
+}
+.article-container .highlight {
+  position: relative;
+  border-radius: 1px;
+}
+.article-container .highlight:after {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  min-width: 100%;
+  height: 1.4rem;
+  background: #e6ebf1;
+  content: "";
+}
+.article-container .highlight pre {
+  margin: 0;
+  padding: 8px 0;
+  border: none;
+}
+.article-container .highlight .line::selection {
+  background: rgba(128,203,196,0.251);
+  color: #90a4ae;
+}
+.article-container .highlight table {
+  position: relative;
+  margin: 0;
+  width: auto;
+  border: none;
+}
+.article-container .highlight table:before {
+  position: fixed;
+  z-index: 1;
+  display: inline-block;
+  margin-top: -1.4rem;
+  padding: 0 0.7rem;
+  width: 5rem;
+  color: #90a4ae;
+  content: "Code";
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+.article-container .highlight table:after {
+  position: absolute;
+  top: -1.4rem;
+  z-index: 0;
+  width: 100%;
+  height: 1.4rem;
+  background: #e6ebf1;
+  content: "";
+}
+.article-container .highlight td {
+  padding: 0;
+  border: none;
+}
+.article-container .highlight figcaption {
+  margin-bottom: 1em;
+  color: #90a4ae;
+  font-size: 1em;
+  line-height: 1em;
+}
+.article-container .highlight figcaption a {
+  float: right;
+  color: #90a4ae;
+}
+.article-container .highlight figcaption a:hover {
+  border-bottom-color: #90a4ae;
+}
+.article-container .highlight .gutter pre {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  background-color: #f6f8fa;
+  color: #cfd8dc;
+  text-align: right;
+}
+.article-container .highlight .code pre {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  width: 100%;
+  background-color: #f6f8fa;
+}
+.article-container .highlight .line {
+  height: 1rem;
+}
+.article-container .gutter {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.article-container .gist table {
+  width: auto;
+}
+.article-container .gist table td {
+  border: none;
+}
+.article-container pre .deletion {
+  background: #fdd;
+}
+.article-container pre .addition {
+  background: #dfd;
+}
+.article-container pre .meta {
+  color: #7c4dff;
+}
+.article-container pre .comment {
+  color: rgba(144,164,174,0.565);
+}
+.article-container pre .comment::selection {
+  background: rgba(128,203,196,0.251);
+  color: #90a4ae;
+}
+.article-container pre .variable,
+.article-container pre .attribute,
+.article-container pre .regexp,
+.article-container pre .ruby .constant,
+.article-container pre .xml .tag .title,
+.article-container pre .xml .pi,
+.article-container pre .xml .doctype,
+.article-container pre .html .doctype,
+.article-container pre .css .id,
+.article-container pre .tag .name,
+.article-container pre .css .class,
+.article-container pre .css .pseudo {
+  color: #e53935;
+}
+.article-container pre .variable::selection,
+.article-container pre .attribute::selection,
+.article-container pre .regexp::selection,
+.article-container pre .ruby .constant::selection,
+.article-container pre .xml .tag .title::selection,
+.article-container pre .xml .pi::selection,
+.article-container pre .xml .doctype::selection,
+.article-container pre .html .doctype::selection,
+.article-container pre .css .id::selection,
+.article-container pre .tag .name::selection,
+.article-container pre .css .class::selection,
+.article-container pre .css .pseudo::selection {
+  background: rgba(128,203,196,0.251);
+  color: #90a4ae;
+}
+.article-container pre .tag {
+  color: #39adb5;
+}
+.article-container pre .tag::selection {
+  background: rgba(128,203,196,0.251);
+  color: #90a4ae;
+}
+.article-container pre .number,
+.article-container pre .preprocessor,
+.article-container pre .literal,
+.article-container pre .params,
+.article-container pre .constant,
+.article-container pre .command {
+  color: #f76d47;
+}
+.article-container pre .number::selection,
+.article-container pre .preprocessor::selection,
+.article-container pre .literal::selection,
+.article-container pre .params::selection,
+.article-container pre .constant::selection,
+.article-container pre .command::selection {
+  background: rgba(128,203,196,0.251);
+  color: #90a4ae;
+}
+.article-container pre .built_in {
+  color: #ffb62c;
+}
+.article-container pre .built_in::selection {
+  background: rgba(128,203,196,0.251);
+  color: #90a4ae;
+}
+.article-container pre .ruby .class .title,
+.article-container pre .css .rules .attribute,
+.article-container pre .string,
+.article-container pre .value,
+.article-container pre .inheritance,
+.article-container pre .header,
+.article-container pre .ruby .symbol,
+.article-container pre .xml .cdata,
+.article-container pre .special,
+.article-container pre .number,
+.article-container pre .formula {
+  color: #91b859;
+}
+.article-container pre .ruby .class .title::selection,
+.article-container pre .css .rules .attribute::selection,
+.article-container pre .string::selection,
+.article-container pre .value::selection,
+.article-container pre .inheritance::selection,
+.article-container pre .header::selection,
+.article-container pre .ruby .symbol::selection,
+.article-container pre .xml .cdata::selection,
+.article-container pre .special::selection,
+.article-container pre .number::selection,
+.article-container pre .formula::selection {
+  background: rgba(128,203,196,0.251);
+  color: #90a4ae;
+}
+.article-container pre .keyword,
+.article-container pre .title,
+.article-container pre .css .hexcolor {
+  color: #39adb5;
+}
+.article-container pre .keyword::selection,
+.article-container pre .title::selection,
+.article-container pre .css .hexcolor::selection {
+  background: rgba(128,203,196,0.251);
+  color: #90a4ae;
+}
+.article-container pre .function,
+.article-container pre .python .decorator,
+.article-container pre .python .title,
+.article-container pre .ruby .function .title,
+.article-container pre .ruby .title .keyword,
+.article-container pre .perl .sub,
+.article-container pre .javascript .title,
+.article-container pre .coffeescript .title {
+  color: #6182b8;
+}
+.article-container pre .function::selection,
+.article-container pre .python .decorator::selection,
+.article-container pre .python .title::selection,
+.article-container pre .ruby .function .title::selection,
+.article-container pre .ruby .title .keyword::selection,
+.article-container pre .perl .sub::selection,
+.article-container pre .javascript .title::selection,
+.article-container pre .coffeescript .title::selection {
+  background: rgba(128,203,196,0.251);
+  color: #90a4ae;
+}
+.article-container pre .tag .attr,
+.article-container pre .javascript .function {
+  color: #7c4dff;
+}
+.article-container pre .tag .attr::selection,
+.article-container pre .javascript .function::selection {
+  background: rgba(128,203,196,0.251);
+  color: #90a4ae;
+}
+ul {
+  padding-inline-start: 0px;
+}
+body {
+  display: block;
+  margin: 0px;
+  background: #f1f1f1;
+}
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+@font-face {
+  font-family: Damion;
+  src: url("../font/Damion-Regular.ttf");
+}
+.wrapper {
+  margin: 0 auto;
+}
+.inner {
+  padding: 10px 10px;
+}
+.header {
+  display: flex;
+  background: #f1f1f1;
+}
+.header-inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+.header-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.header-nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  margin: 0px 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+.header-page-name {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin: 2.5%;
+}
+.header-page-name-inner {
+  padding: 0 2.5%;
+  font-size: 2em;
+  font-family: Damion;
+}
+.header-page-desc-inner {
+  font-weight: 600;
+  color: #b2b3b2;
+  font-size: 0.66em;
+}
+.index-posts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.index-posts-post {
+  margin: 3rem 0rem;
+  border-radius: 0.8rem;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+}
+.fix {
+  width: 20rem;
+}
+.index-post-img {
+  display: flex;
+  width: 48%;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.img-bg {
+  width: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.index-post-desc {
+  display: flex;
+  width: 52%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1em 2em 0.1em 2em;
+}
+.index-post-title > p {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.index-post-title-link {
+  ackground-color: transparent;
+  box-shadow: inset 0 0 0 2px #51baa4;
+  color: #51baa4 !important;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 2.5em;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  height: 2.85em;
+  line-height: 2.95em;
+  min-width: 6em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0rem 0rem 1rem 0rem;
+}
+.paginator {
+  width: 100%;
+  margin: 1rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.page-nav {
+  width: 50%;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.pager {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.more {
+  ackground-color: transparent;
+  box-shadow: inset 0 0 0 2px #51baa4;
+  color: #51baa4 !important;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 2.5em;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  height: 2.85em;
+  line-height: 2.95em;
+  min-width: 6em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0rem 0rem 1rem 0rem;
+}
+.post {
+  display: flex;
+  margin: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-item: center;
+  max-width: 60rem;
+  margin: auto;
+}
+.post-content {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+}
+.posts .post:first-child {
+  margin-top: 0;
+}
+.posts .post-title {
+  font-size: 1.5em;
+}
+.posts .post-title .post-title-link {
+  color: #368ccb;
+  text-decoration: none;
+}
+.posts .post-content a {
+  color: #368ccb;
+  text-decoration: none;
+}
+.posts .post-meta {
+  color: #bababa;
+}
+@font-face {
+  font-family: sourceCode;
+  src: url("../font/SourceCodeVariable-Roman.ttf");
+}
+.article-container pre {
+  font-family: sourceCode;
+}
+div {
+  font-family: sourceCode;
+}
+.post-meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.post-time {
+  font-size: 0.5rem;
+}
